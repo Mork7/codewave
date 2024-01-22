@@ -4,16 +4,15 @@ export default function ContactScreen() {
 
   return (
     <div className="flex flex-col items-center p-4">
-      <div className="max-w-md w-full bg-slate-200 p-6 rounded-lg shadow-lg h-">
+      <p>If you feel our team would be a good fit for you, or if there are any questions you have that you&apos;d like to address, please leave us a message and a member of our team will get back to you as soon as possible!</p>
+      <div className="max-w-md w-full bg-slate-200 mt-4 p-6 rounded-lg shadow-lg h-">
         <h1 className="font-bold text-3xl text-center text-gray-800 mb-6">
           Contact Us
         </h1>
         <h3 className="text-gray-600 mb-2">Phone and Text: 519-867-4721</h3>
-        <h3 className="text-gray-600 mb-2">
-          Email: mark@infinerty.ca
+        <h3 className="text-gray-600 mb-4">
+          Email: info@infinerty.ca
         </h3>
-        <h3 className="text-gray-600 mb-6">Address: Coming Soon...</h3>
-
         <form action="" className="flex flex-col">
           <div className="mb-4 flex flex-col">
             <label htmlFor="first-name" className={labelClasses}>

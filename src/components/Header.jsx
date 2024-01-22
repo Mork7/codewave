@@ -14,7 +14,7 @@ export default function TopToolbar({ onToolbarButtonClick }) {
     "block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white md:ml-4";
 
   return (
-    <nav className="py-2">
+    <nav className="mb-6">
       <div className="max-w-7xl mx-auto px-4 h-28 flex items-center justify-between">
         <img className="w-52" src={InfinertyLogo} alt="" />
         <div className="flex items-center"></div>
@@ -94,27 +94,27 @@ export default function TopToolbar({ onToolbarButtonClick }) {
         className={`${isOpen ? "block" : "hidden"} md:hidden`}
         id="mobile-menu"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="flex flex-col items-center px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <button
-            className={buttonClasses}
+            className={`${buttonClasses} + w-24`}
             onClick={() => handleButtonClick("home")}
           >
             Home
           </button>
           <button
-            className={buttonClasses}
+            className={`${buttonClasses} + w-24`}
             onClick={() => handleButtonClick("about")}
           >
             About
           </button>
           <button
-            className={buttonClasses}
+            className={`${buttonClasses} + w-24`}
             onClick={() => handleButtonClick("products")}
           >
             Products
           </button>
           <button
-            className={buttonClasses}
+            className={`${buttonClasses} + w-24`}
             onClick={() => handleButtonClick("contact")}
           >
             Contact

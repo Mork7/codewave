@@ -1,35 +1,24 @@
-export default function HomeScreen() {
-  const paragraphStyles = "mb-4 p-2 w-80 border-2 border-gray-500 rounded-xl";
+import CardLayout from "./CardLayout";
 
+export default function HomeScreen() {
   return (
-    <div id="homescreen-container" className="flex flex-col justify-center">
-      <div id="card-layout" className="flex flex-col items-center">
-        <h1 className="text-2xl">
+    <div id="homescreen-container" className="flex flex-col items-center p-6">
+      <section className="flex flex-col mb-10 items-center text-center">
+        <h1 className="text-3xl">
           <strong>
-            <span style={{ color: "#254b67" }}>INFINERTY</span> &lt;Web
-            Solutions/&gt;
+            <span style={{ color: "#254b67" }}>INFINERTY</span> &lt;WebSolutions
+            /&gt;
           </strong>
         </h1>
-        <div className="flex flex-col p-4 lg:flex-row">
-          <p className={`${paragraphStyles} + lg:border-none`}>
-            We&apos;re committed to excellence in full-stack web application
-            development, providing advanced and reliable solutions for
-            businesses seeking digital superiority.
-          </p>
-          <p
-            className={`${paragraphStyles} + lg:border-x-2 lg:rounded-none lg:border-y-0`}
-          >
-            Our mission is to harness cutting-edge technology to engineer
-            high-performance web applications that drive operational efficiency
-            and profitability.
-          </p>
-          <p className={`${paragraphStyles} + lg:border-none`}>
-            We are dedicated to surpassing industry benchmarks and propelling
-            businesses towards their strategic objectives in a competitive
-            digital marketplace.
-          </p>
-        </div>
-      </div>
+        <h2 className="text-2xl italic text-customColor2">
+          Transforming Your Digital Dreams into Reality
+        </h2>
+      </section>
+      <img
+        src="https://usa.bootcampcdn.com/wp-content/uploads/sites/103/2019/10/Vanderbilt_7-800x412.png"
+        alt=""
+      />
+      <CardLayout />
     </div>
   );
 }
