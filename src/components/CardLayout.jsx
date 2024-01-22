@@ -1,6 +1,6 @@
 export default function CardLayout() {
   const paragraphStyles =
-    "mb-4 p-2 w-80 border-gray-500 hover:shadow-2xl";
+    "mb-4 p-2 w-80 border-gray-500 text-center hover:shadow-2xl";
 
   return (
     <div id="card-layout" className="flex flex-col items-center text-xl">

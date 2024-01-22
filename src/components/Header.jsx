@@ -34,9 +34,9 @@ export default function TopToolbar({ onToolbarButtonClick }) {
             </button>
             <button
               className={buttonClasses}
-              onClick={() => handleButtonClick("products")}
+              onClick={() => handleButtonClick("projects")}
             >
-              Products
+              Projects
             </button>
             <button
               className={buttonClasses}
@@ -109,9 +109,9 @@ export default function TopToolbar({ onToolbarButtonClick }) {
           </button>
           <button
             className={`${buttonClasses} + w-24`}
-            onClick={() => handleButtonClick("products")}
+            onClick={() => handleButtonClick("projects")}
           >
-            Products
+            Projects
           </button>
           <button
             className={`${buttonClasses} + w-24`}

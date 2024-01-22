@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import HomeScreen from "./components/HomeScreen";
 import AboutScreen from "./components/AboutScreen";
-import ProductsScreen from "./components/ProductsScreen";
+import ProjectsScreen from "./components/ProjectsScreen";
 import ContactScreen from "./components/ContactScreen";
 import Footer from './components/Footer';
 
@@ -16,9 +16,9 @@ export default function App() {
   return (
     <div className="max-h-screen overflow-y-scroll">
       <Header onToolbarButtonClick={handleToolbarClick} />
-      {activeScreen === "home" && <HomeScreen />}
+      {activeScreen === "home" && <HomeScreen onPastProjectsClick={handleToolbarClick}/>}
       {activeScreen === "about" && <AboutScreen />}
-      {activeScreen === "products" && <ProductsScreen />}
+      {activeScreen === "projects" && <ProjectsScreen />}
       {activeScreen === "contact" && <ContactScreen />}
       <Footer />
     </div>
