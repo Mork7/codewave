@@ -14,7 +14,7 @@ export default function TopToolbar({ onToolbarButtonClick }) {
     "block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white md:ml-4";
 
   return (
-    <nav className="bg-# py-2">
+    <nav className="py-2">
       <div className="max-w-7xl mx-auto px-4 h-28 flex items-center justify-between">
         <img className="w-52" src={InfinertyLogo} alt="" />
         <div className="flex items-center"></div>

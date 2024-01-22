@@ -13,12 +13,12 @@ export default function App() {
   };
   
   return (
-    <>
+    <div className="max-h-screen overflow-y-scroll">
       <TopToolbar onToolbarButtonClick={handleToolbarClick} />
       {activeScreen === "home" && <HomeScreen />}
       {activeScreen === "about" && <AboutScreen />}
       {activeScreen === "products" && <ProductsScreen />}
       {activeScreen === "contact" && <ContactScreen />}
-    </>
+    </div>
   );
 }
