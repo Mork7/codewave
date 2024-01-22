@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CodeWaveLogo from "../assets/codewave-logo-no-background.png";
+import InfinertyLogo from "../assets/infinerty-logo.png";
 
 // eslint-disable-next-line react/prop-types
 export default function TopToolbar({ onToolbarButtonClick }) {
@@ -11,12 +11,12 @@ export default function TopToolbar({ onToolbarButtonClick }) {
   };
 
   const buttonClasses =
-    "block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white md:ml-4";
+    "block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white md:ml-4";
 
   return (
-    <nav className="bg-slate-800 py-2">
+    <nav className="bg-# py-2">
       <div className="max-w-7xl mx-auto px-4 h-28 flex items-center justify-between">
-        <img className="w-36" src={CodeWaveLogo} alt="" />
+        <img className="w-52" src={InfinertyLogo} alt="" />
         <div className="flex items-center"></div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
@@ -50,7 +50,7 @@ export default function TopToolbar({ onToolbarButtonClick }) {
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="bg-slate-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white"
+            className="mr-1 bg-slate-400 inline-flex items-center justify-center p-2 rounded-md text-black hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
