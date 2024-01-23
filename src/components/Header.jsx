@@ -10,7 +10,7 @@ export default function TopToolbar({ onToolbarButtonClick }) {
   };
 
   const buttonClasses =
-    "block px-3 py-2 rounded-md text-base font-medium text-black hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white md:ml-4";
+    "block px-3 py-2 rounded-md text-base font-medium text-black hover:ring-2 hover:ring-black hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white md:ml-4";
 
   return (
     <nav className="mb-6">

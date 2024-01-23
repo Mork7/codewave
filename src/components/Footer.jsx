@@ -7,6 +7,7 @@ import MasterIcon from "../assets/icons/master-icon.png";
 import AmericanExpressIcon from "../assets/icons/american-express-icon.png";
 
 export default function Footer() {
+  const ButtonClasses = "hover:text-white";
 
   return (
     <div
@@ -32,32 +33,32 @@ export default function Footer() {
       </section>
       <section className="flex justify-between w-3/4 mb-3 md:w-1/2">
         <div className="text-center">
-          <button>Facebook</button>
+          <button className={ButtonClasses}>Facebook</button>
           <br />
-          <button>Testimonials</button>
+          <button className={ButtonClasses}>Testimonials</button>
           <br />
-          <button>Instagram</button>
+          <button className={ButtonClasses}>Instagram</button>
           <br />
-          <button>Past Projects</button>
+          <button className={ButtonClasses}>Past Projects</button>
         </div>
-        <div className="text-center">
-          <button>Terms and Conditions</button>
+        <div className="text-center ">
+          <button className={ButtonClasses}>Terms and Conditions</button>
           <br />
-          <button>Legal</button>
+          <button className={ButtonClasses}>Legal</button>
           <br />
-          <button>Privacy Policy</button>
+          <button className={ButtonClasses}>Privacy Policy</button>
           <br />
-          <button>Locations</button>
+          <button className={ButtonClasses}>Locations</button>
         </div>
       </section>
       <section
         id="payment-section"
-        className="flex flex-col items-center lg:w-1/3"
+        className="flex flex-col text-center items-center lg:w-1/3 mx-7"
       >
         <h2 className="text-2xl mb-2">Payment Options</h2>
         <div className="flex flex-col items-center">
           <h3 className="text-sm">WE ACCEPT</h3>
-          <div className="flex">
+          <div className="flex justify-center">
             <img src={PaypalIcon} alt="PayPal" />
             <img src={VisaIcon} alt="Visa" />
             <img src={MasterIcon} alt="MasterCard" />
