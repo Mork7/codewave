@@ -1,11 +1,19 @@
 import CardLayout from "./CardLayout";
+import { useEffect, useState } from "react";
 
-// eslint-disable-next-line react/prop-types
 export default function HomeScreen({onPastProjectsClick}) {
+  
+  // need to know if the component is mounted, when it is we use useEffect to trigger animation. 
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const handlePastProjectsClick = (buttonId) => {
     onPastProjectsClick(buttonId)
   }
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <div id="homescreen-container" className="flex flex-col items-center p-6">
       <section className="flex flex-col mb-10 items-center text-center">
@@ -20,6 +28,7 @@ export default function HomeScreen({onPastProjectsClick}) {
         </h2>
       </section>
       <img
+        className={`shadow-2xl ${isLoaded ? 'animate-fadeInLeft' : ''}`}
         src="https://usa.bootcampcdn.com/wp-content/uploads/sites/103/2019/10/Vanderbilt_7-800x412.png"
         alt=""
       />

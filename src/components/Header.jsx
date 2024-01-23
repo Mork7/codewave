@@ -1,7 +1,6 @@
 import { useState } from "react";
-import InfinertyLogo from "../assets/infinerty-logo.png";
+import InfinertyLogo from "../assets/images/infinerty-logo-micro.png";
 
-// eslint-disable-next-line react/prop-types
 export default function TopToolbar({ onToolbarButtonClick }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +15,7 @@ export default function TopToolbar({ onToolbarButtonClick }) {
   return (
     <nav className="mb-6">
       <div className="max-w-7xl mx-auto px-4 h-28 flex items-center justify-between">
-        <img className="w-52" src={InfinertyLogo} alt="" />
+        <img className="w-36" src={InfinertyLogo} alt="" />
         <div className="flex items-center"></div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">

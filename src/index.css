@@ -3,10 +3,22 @@
 @tailwind utilities;
 
 body {
-    min-height: 100vh;
-    background-image: url('./assets/codewave-bg-2.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    color: black;
+  min-height: 100vh;
+  background-image: url("./assets/images/background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
