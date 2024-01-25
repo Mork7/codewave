@@ -7,10 +7,10 @@ import MasterIcon from "../assets/icons/master-icon.png";
 import AmericanExpressIcon from "../assets/icons/american-express-icon.png";
 
 export default function Footer() {
-  const ButtonClasses = "hover:text-white";
+  const ButtonClasses = "hover:text-white cursor-pointer";
 
   return (
-    <div
+    <footer
       id="footer-container"
       className="flex flex-col items-center mx-auto bottom-0 px-4 text-lg max-w-screen-lg justify-between md:px-16 md:mt-8 md:flex-row md:items-start"
     >
@@ -33,22 +33,22 @@ export default function Footer() {
       </section>
       <section className="flex justify-between w-3/4 mb-3 md:w-1/2">
         <div className="text-center">
-          <button className={ButtonClasses}>Facebook</button>
+          <a className={ButtonClasses}>Facebook</a>
           <br />
-          <button className={ButtonClasses}>Testimonials</button>
+          <a className={ButtonClasses}>Testimonials</a>
           <br />
-          <button className={ButtonClasses}>Instagram</button>
+          <a className={ButtonClasses}>Instagram</a>
           <br />
-          <button className={ButtonClasses}>Past Projects</button>
+          <a className={ButtonClasses}>Past Projects</a>
         </div>
         <div className="text-center ">
-          <button className={ButtonClasses}>Terms and Conditions</button>
+          <a className={ButtonClasses}>Terms and Conditions</a>
           <br />
-          <button className={ButtonClasses}>Legal</button>
+          <a className={ButtonClasses}>Legal</a>
           <br />
-          <button className={ButtonClasses}>Privacy Policy</button>
+          <a className={ButtonClasses}>Privacy Policy</a>
           <br />
-          <button className={ButtonClasses}>Locations</button>
+          <a className={ButtonClasses}>Locations</a>
         </div>
       </section>
       <section
@@ -66,6 +66,6 @@ export default function Footer() {
           </div>
         </div>
       </section>
-    </div>
+    </footer>
   );
 }
