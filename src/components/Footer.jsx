@@ -32,24 +32,32 @@ export default function Footer() {
         </div>
       </section>
       <section className="flex justify-between w-3/4 mb-3 md:w-1/2">
-        <div className="text-center">
-          <a className={ButtonClasses}>Facebook</a>
-          <br />
-          <a className={ButtonClasses}>Testimonials</a>
-          <br />
+        <ul className="text-center">
+          <li>
+            <a className={ButtonClasses}>Facebook</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Testimonials</a>
+          </li>
           <a className={ButtonClasses}>Instagram</a>
-          <br />
-          <a className={ButtonClasses}>Past Projects</a>
-        </div>
-        <div className="text-center ">
-          <a className={ButtonClasses}>Terms and Conditions</a>
-          <br />
-          <a className={ButtonClasses}>Legal</a>
-          <br />
-          <a className={ButtonClasses}>Privacy Policy</a>
-          <br />
-          <a className={ButtonClasses}>Locations</a>
-        </div>
+          <li>
+            <a className={ButtonClasses}>Past Projects</a>
+          </li>
+        </ul>
+        <ul className="text-center ">
+          <li>
+            <a className={ButtonClasses}>Terms and Conditions</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Legal</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Privacy Policy</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Locations</a>
+          </li>
+        </ul>
       </section>
       <section
         id="payment-section"
