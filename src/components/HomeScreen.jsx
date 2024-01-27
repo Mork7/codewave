@@ -1,14 +1,13 @@
 import CardLayout from "./CardLayout";
 import { useEffect, useState } from "react";
 
-export default function HomeScreen({onPastProjectsClick}) {
-  
-  // need to know if the component is mounted, when it is we use useEffect to trigger animation. 
+export default function HomeScreen({ onPastProjectsClick }) {
+  // need to know if the component is mounted, when it is we use useEffect to trigger animation.
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handlePastProjectsClick = (buttonId) => {
-    onPastProjectsClick(buttonId)
-  }
+    onPastProjectsClick(buttonId);
+  };
 
   useEffect(() => {
     setIsLoaded(true);
@@ -28,7 +27,7 @@ export default function HomeScreen({onPastProjectsClick}) {
         </h2>
       </section>
       <img
-        className={`shadow-2xl ${isLoaded ? 'animate-fadeInLeft' : ''}`}
+        className={`shadow-2xl ${isLoaded ? "animate-fadeInLeft" : ""}`}
         src="https://usa.bootcampcdn.com/wp-content/uploads/sites/103/2019/10/Vanderbilt_7-800x412.png"
         alt=""
       />
@@ -39,13 +38,25 @@ export default function HomeScreen({onPastProjectsClick}) {
       >
         <h2 className="text-primary text-3xl font-bold">How This Works</h2>
         <p>
-  Do you have a small business and need a webpage that clearly displays your products or services? Are you looking for a solution to store, update, and receive payments for your inventory? Perhaps you&apos;re an individual in need of a personal webpage. Whatever your needs, <strong>Infinerty Web Solutions</strong> is here to help. We specialize in designing and implementing web applications tailored to your individual or business requirements.
-</p>
-<br />
-<p>
-  Interested in seeing what we can do for you? Take a moment to check out our <button className="font-bold" onClick={() => handlePastProjectsClick('projects')}>past projects</button> and discover why our team might be the perfect choice for your web solution needs!
-</p>
-
+          Do you have a small business and need a webpage that clearly displays
+          your products or services? Are you looking for a solution to store,
+          update, and receive payments for your inventory? Perhaps you&apos;re in need of a personal webpage. Whatever your needs, <strong>Infinerty Web Solutions</strong> is here to help. We
+          specialize in designing and implementing web applications tailored to
+          your individual or business requirements.
+        </p>
+        <br />
+        <p>
+          Interested in seeing what we can do for you? Take a moment to check
+          out our{" "}
+          <button
+            className="font-bold"
+            onClick={() => handlePastProjectsClick("projects")}
+          >
+            past projects
+          </button>{" "}
+          and discover why our team might be the perfect choice for your web
+          solution needs!
+        </p>
       </section>
     </div>
   );

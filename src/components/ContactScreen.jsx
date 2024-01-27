@@ -3,17 +3,22 @@ export default function ContactScreen() {
   const labelClasses = "mb-2 font-medium text-gray-700";
 
   return (
-    <div className="flex flex-col items-center p-4">
-      <p>If you feel our team would be a good fit for you, or if there are any questions you have that you&apos;d like to address, please leave us a message and a member of our team will get back to you as soon as possible!</p>
+    <div className="flex flex-col items-center p-6">
+      <p>
+        If you feel our team would be a good fit for you, or if there are any
+        questions you have that you&apos;d like to address, please leave us a
+        message and a member of our team will get back to you as soon as
+        possible!
+      </p>
       <div className="max-w-md w-full bg-slate-200 mt-4 p-6 rounded-lg shadow-lg h-">
         <h1 className="font-bold text-3xl text-center text-gray-800 mb-6">
           Contact Us
         </h1>
-        <p className="text-gray-600 mb-2">Phone and Text: 519-867-4721</p>
-        <p className="text-gray-600 mb-4">
-          Email: info@infinerty.ca
-        </p>
-        <form action="" className="flex flex-col">
+        <address>
+          <p className="text-gray-600 mb-2">Phone and Text: 519-867-4721</p>
+          <p className="text-gray-600 mb-4">Email: info@infinerty.ca</p>
+        </address>
+        <form className="flex flex-col">
           <div className="mb-4 flex flex-col">
             <label htmlFor="first-name" className={labelClasses}>
               First Name:

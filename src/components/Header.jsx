@@ -16,7 +16,6 @@ export default function TopToolbar({ onToolbarButtonClick }) {
     <nav className="mb-6">
       <div className="max-w-7xl mx-auto px-4 h-28 flex items-center justify-between">
         <img className="w-36" src={InfinertyLogo} alt="" />
-        <div className="flex items-center"></div>
         <div className="hidden md:block">
           <div className="ml-10 flex items-baseline space-x-4">
             <button

@@ -7,10 +7,10 @@ import MasterIcon from "../assets/icons/master-icon.png";
 import AmericanExpressIcon from "../assets/icons/american-express-icon.png";
 
 export default function Footer() {
-  const ButtonClasses = "hover:text-white";
+  const ButtonClasses = "hover:text-white cursor-pointer";
 
   return (
-    <div
+    <footer
       id="footer-container"
       className="flex flex-col items-center mx-auto bottom-0 px-4 text-lg max-w-screen-lg justify-between md:px-16 md:mt-8 md:flex-row md:items-start"
     >
@@ -32,24 +32,32 @@ export default function Footer() {
         </div>
       </section>
       <section className="flex justify-between w-3/4 mb-3 md:w-1/2">
-        <div className="text-center">
-          <button className={ButtonClasses}>Facebook</button>
-          <br />
-          <button className={ButtonClasses}>Testimonials</button>
-          <br />
-          <button className={ButtonClasses}>Instagram</button>
-          <br />
-          <button className={ButtonClasses}>Past Projects</button>
-        </div>
-        <div className="text-center ">
-          <button className={ButtonClasses}>Terms and Conditions</button>
-          <br />
-          <button className={ButtonClasses}>Legal</button>
-          <br />
-          <button className={ButtonClasses}>Privacy Policy</button>
-          <br />
-          <button className={ButtonClasses}>Locations</button>
-        </div>
+        <ul className="text-center">
+          <li>
+            <a className={ButtonClasses}>Facebook</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Testimonials</a>
+          </li>
+          <a className={ButtonClasses}>Instagram</a>
+          <li>
+            <a className={ButtonClasses}>Past Projects</a>
+          </li>
+        </ul>
+        <ul className="text-center ">
+          <li>
+            <a className={ButtonClasses}>Terms and Conditions</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Legal</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Privacy Policy</a>
+          </li>
+          <li>
+            <a className={ButtonClasses}>Locations</a>
+          </li>
+        </ul>
       </section>
       <section
         id="payment-section"
@@ -66,6 +74,6 @@ export default function Footer() {
           </section>
         </div>
       </section>
-    </div>
+    </footer>
   );
 }
