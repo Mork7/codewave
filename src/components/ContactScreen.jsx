@@ -9,10 +9,10 @@ export default function ContactScreen() {
         <h1 className="font-bold text-3xl text-center text-gray-800 mb-6">
           Contact Us
         </h1>
-        <h3 className="text-gray-600 mb-2">Phone and Text: 519-867-4721</h3>
-        <h3 className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-2">Phone and Text: 519-867-4721</p>
+        <p className="text-gray-600 mb-4">
           Email: info@infinerty.ca
-        </h3>
+        </p>
         <form action="" className="flex flex-col">
           <div className="mb-4 flex flex-col">
             <label htmlFor="first-name" className={labelClasses}>

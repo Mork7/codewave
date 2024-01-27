@@ -58,12 +58,12 @@ export default function Footer() {
         <h2 className="text-2xl mb-2">Payment Options</h2>
         <div className="flex flex-col items-center">
           <h3 className="text-sm">WE ACCEPT</h3>
-          <div className="flex justify-center">
+          <section className="flex justify-center">
             <img src={PaypalIcon} alt="PayPal" />
             <img src={VisaIcon} alt="Visa" />
             <img src={MasterIcon} alt="MasterCard" />
             <img src={AmericanExpressIcon} alt="American Express" />
-          </div>
+          </section>
         </div>
       </section>
     </div>
