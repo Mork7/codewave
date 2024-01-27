@@ -4,16 +4,26 @@ export default function ContactScreen() {
 
   return (
     <div className="flex flex-col items-center p-6">
-      <p>
-        If you feel our team would be a good fit for you, or if there are any
-        questions you have that you&apos;d like to address, please leave us a
-        message and a member of our team will get back to you as soon as
-        possible!
-      </p>
+      <h1 className="w-full text-center text-primary text-4xl mb-3 font-bold">
+        Contact Us
+      </h1>
+      <section className="text-center">
+        <p>
+          If you feel our team would be a good fit for you, or if there are any
+          questions you have that you&apos;d like to address, please leave us a
+          message and a member of our team will get back to you as soon as
+          possible!
+        </p>
+        <h2 className="font-extrabold">
+          THIS BUSINESS IS NOT TAKING CLIENTS, THIS IS A PERSONAL PROJECT THAT
+          WILL ONE DAY BE AVAILBLE FOR PUBLIC SERVICE. THANK YOU FOR YOUR
+          UNDERSTANDING.
+        </h2>
+      </section>
       <div className="max-w-md w-full bg-slate-200 mt-4 p-6 rounded-lg shadow-lg h-">
-        <h1 className="font-bold text-3xl text-center text-gray-800 mb-6">
-          Contact Us
-        </h1>
+        <h2 className="font-bold text-2xl text-center text-gray-800 mb-6">
+          Contact Form
+        </h2>
         <address>
           <p className="text-gray-600 mb-2">Phone and Text: 519-867-4721</p>
           <p className="text-gray-600 mb-4">Email: info@infinerty.ca</p>
